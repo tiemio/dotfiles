@@ -1,0 +1,93 @@
+[
+  {
+    "context": "Editor && VimControl && !VimWaiting && !menu",
+    "bindings": {
+      "ctrl-w z": "workspace::ToggleZoom",
+      "ctrl-w t": "terminal_panel::ToggleFocus",
+      "g ]": "editor::GoToDiagnostic",
+      "g [": "editor::GoToPreviousDiagnostic",
+      "g r": "editor::FindAllReferences",
+      "shift-k": "editor::Hover",
+      "space l a": "editor::ToggleCodeActions",
+      "space l r": "editor::Rename",
+      "space l f": "editor::Format",
+      "space l l": "diagnostics::Deploy",
+      "space f": "file_finder::Toggle",
+      "space o": "tab_switcher::Toggle",
+      "space e": "workspace::ToggleRightDock",
+      "space v": "editor::GoToDefinitionSplit",
+      "space c d": "assistant::InlineAssist",
+      "space o f": "file_finder::Toggle" // Open file selector in the current directory
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      "alt-h": "workspace::ActivatePaneLeft",
+      "alt-l": "workspace::ActivatePaneRight",
+      "alt-k": "workspace::ActivatePaneUp",
+      "alt-j": "workspace::ActivatePaneDown"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-w z": "workspace::ToggleZoom",
+      "ctrl-w t": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-[": "editor::Outdent",
+      "alt-]": "editor::Indent",
+      "alt-alt-up": "editor::AddSelectionAbove",
+      "alt-alt-down": "editor::AddSelectionBelow",
+      "alt-ctrl-n": "editor::AddSelectionBelow",
+      "alt-d": [
+        "editor::SelectNext",
+        {
+          "replace_newest": false
+        }
+      ],
+      "ctrl-alt-d": [
+        "editor::SelectPrevious",
+        {
+          "replace_newest": false
+        }
+      ],
+      "alt-k alt-d": [
+        "editor::SelectNext",
+        {
+          "replace_newest": true
+        }
+      ],
+      "alt-k ctrl-alt-d": [
+        "editor::SelectPrevious",
+        {
+          "replace_newest": true
+        }
+      ],
+      "alt-/": [
+        "editor::ToggleComments",
+        {
+          "advance_downwards": false
+        }
+      ],
+      "alt-alt-[": "editor::Fold",
+      "alt-alt-]": "editor::UnfoldLines",
+      "ctrl-sh": "editor::ShowCompletions",
+      "alt-.": "editor::ToggleCodeActions"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-p": "workspace::ToggleRightDock", // Toggle the right dock (other side)
+      "alt-h": "workspace::ActivatePaneLeft", // Navigate panes
+      "ctrl-x z": "workspace::ToggleZoom", // Fullscreen the current panel
+      "ctrl-x ,": "terminal_panel::ToggleFocus", // Open/close the terminal
+      "ctrl-x %": "pane::SplitRight",
+      "ctrl-x , b": "file_finder::Toggle" // Open file selector in the current directory
+    }
+  }
+]

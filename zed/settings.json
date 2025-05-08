@@ -1,0 +1,59 @@
+{
+  "icon_theme": "Catppuccin Mocha",
+  "project_panel": {
+    "dock": "right"
+  },
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
+    },
+    "version": "2"
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "vim_mode": true,
+  "ui_font_family": "JetBrainsMono Nerd Font",
+  "ui_font_size": 21,
+  "buffer_font_size": 21,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Github Dark"
+  },
+  "vim": {
+    "use_multiline_find": true,
+    "use_smartcase_find": true,
+    "toggle_relative_line_numbers": true,
+    "highlight_on_yank_duration": 10
+  },
+  "centered_layout": {
+    "left_padding": 0.15,
+    "right_padding": 0.15
+  },
+  "lsp": {
+    "gopls": {
+      "initialization_options": {
+        "usePlaceholders": true,
+        "hints": {
+          "assignVariableTypes": true,
+          "compositeLiteralFields": true,
+          "compositeLiteralTypes": true,
+          "constantValues": true,
+          "functionTypeParameters": true,
+          "parameterNames": true,
+          "rangeVariableTypes": true
+        }
+      }
+    }
+  }
+}
