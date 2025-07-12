@@ -1,0 +1,1 @@
+This should be saved in `~/.config/i3/config`
